@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "watch": "node watch.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.17.5",
+    "normalize.css": "^8.0.1"
+  }
+}

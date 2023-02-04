@@ -1,0 +1,60 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+header {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 177.77vh) {
+    .video-section-inner {
+        width: 177.77vh;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 177.76vh) {
+    .video-section-inner {
+        width: 100vw;
+        height: 56.25vw;
+    }
+}
+
+.left-side,
+.right-side {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    background: #eeeeee;
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 177.77%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
